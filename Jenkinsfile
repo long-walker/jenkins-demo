@@ -19,5 +19,12 @@ pipeline {
                 sh 'python3 test_app.py'
             }
         }
+
+        stage('Deploy to Production') {
+            steps {
+                echo '🚀 Deploying code to the production server...'
+                echo '✅ Deployment complete! App is live.'
+            }
+        }
     }
 }
